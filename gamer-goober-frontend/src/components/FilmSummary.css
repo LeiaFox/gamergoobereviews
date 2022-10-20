@@ -1,0 +1,110 @@
+.filmsummary{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(161, 95, 150);
+  border-color: chartreuse;
+  border-radius: 10px;
+  border-style: groove;
+  border-width: 20px;
+  padding: 30px;
+  width: 400px;
+  height: 400px;
+  transition: 200ms;
+}
+
+.filmsummary:hover{
+  border-color: rgb(255, 0, 149);
+  border-width: 30px;
+  width: 450px;
+  height: 450px;
+  padding: 20px;
+}
+
+.filmsummary:hover img{
+  border-color: chartreuse;
+  border-radius: 10px;
+  border-style: groove;
+  border-width: 20px;
+}
+
+.filmsummary footer{
+  display: flex;
+  flex-direction: row;
+  gap: 20pt;
+  justify-content: center;
+  align-items: center;
+}
+
+.updoots{
+  position: absolute;
+  right: 5pt;
+  bottom:5pt;
+}
+
+.updoots button{
+  padding: 5pt;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.updoots button:first-of-type{
+  background-color: cornflowerblue;
+}
+
+.updoots button:first-of-type:hover{
+  background-color: rgb(54, 122, 230);
+}
+
+.updoots button:last-of-type{
+  background-color: rgb(102, 237, 100);
+}
+
+.updoots button:last-of-type:hover{
+  background-color: rgb(68, 173, 66);
+}
+
+.titleagerating{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Comic Sans MS";
+  cursor: pointer;
+}
+
+h2{
+  text-align: right;
+}
+
+div img{
+  width: 230px;
+  height: 230px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.filmsummary:hover #spinner{
+  animation-play-state: paused;
+}
+
+#spinner {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-360deg); }
+}
+@keyframes depth {
+  0% { text-shadow: 0 0 black; }
+  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black, 6px 0 black; }
+  50% { text-shadow: 0 0 black; }
+  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black, -6px 0 black; }
+  100% { text-shadow: 0 0 black; }
+}

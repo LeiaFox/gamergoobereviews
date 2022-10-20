@@ -1,0 +1,70 @@
+.app-header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 24pt;
+    background-color: rgb(246, 255, 0);
+    border-color: rgb(204, 0, 255);
+    border-radius: 0px 0px 25px 25px;
+    border-style: groove;
+    border-width: 20px;
+    font-family: "Comic Sans MS";
+}
+
+.app-header h1{
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.app-header h1:hover{
+    font-size: 34pt;
+    color: blue;
+}
+
+.search-bar{
+    position: absolute;
+    right: 10pt;
+}
+
+.search-bar input{
+    padding: 2pt;
+    background-color: rgb(255, 136, 241);
+    border-radius: 10pt;
+    border-color: rgb(255, 0, 85);
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 20px;
+    color: green;
+    font-weight: 700;
+    font-size: large;
+    font-family: "Comic Sans MS";
+}
+
+.filled{
+    background-color: rgb(71, 192, 198);
+    border-radius: 25px 25px 0px 0px;
+}
+
+.search-bar > div{
+    width: 100%;
+    position: absolute;
+    background-color: rgb(71, 192, 198);
+    border-radius: 0px 0px 25px 25px;
+    padding: 8pt 0pt;
+}
+
+.search-bar > div > div{
+    padding: 2pt 8pt;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.search-bar > div > div:hover{
+    font-size: 1.2em;
+    font-weight: 900;
+    background: -webkit-linear-gradient(right,rgb(253, 135, 0), rgb(135, 132, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
